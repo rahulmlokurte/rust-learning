@@ -1,0 +1,5 @@
+.idea
+# Generated files
+/target/
+
+#Cargo.lock -- Uncomment if creating a library crate and not an executable.
