@@ -1,3 +1,5 @@
+mod ownership;
+
 fn main() {
     println!("Learning ownership");
     let s = String::from("hello");
