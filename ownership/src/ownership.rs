@@ -13,6 +13,11 @@ fn main() {
     println!("The first 2 letters are: {}", a);
     let b = &s[2..s.len()];
     println!("The remaining letters are: {}", b);
+
+    let v = vec![1,2,3];
+    let total = sum(&v);
+    println!("{}", total);
+    println!("{:?}", v);
 }
 
 fn gives_ownership() -> String {
@@ -22,4 +27,12 @@ fn gives_ownership() -> String {
 
 fn takes_and_gives_back(a_string: String) -> String {
     a_string
+}
+
+fn sum(vector: &Vec<i32>) -> i32 {
+    let mut sum = 0;
+    for item in vector {
+        sum += item
+    }
+    sum
 }
